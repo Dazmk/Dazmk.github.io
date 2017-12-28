@@ -3,6 +3,35 @@
   
     
     <entry>
+      <title><![CDATA[Ruby on Rails 提示没有匹配的路由(no route matches)]]></title>
+      <url>/2017/12/28/Ruby-on-Rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches/</url>
+      <content type="html"><![CDATA[<h1 id="No-route-matches"><a href="#No-route-matches" class="headerlink" title="No route matches"></a>No route matches</h1><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_matches.png?attname=&amp;e=1514442700&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:ZqqhszZqoE67WXLDgRgK12iS8MM" alt="image"></p>
+<p>今天在跟着做 Ruby on Rails 教程第五章的例子时，遇到了一个问题 No route maches</p>
+<p>代码如下</p>
+<p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_code.png?attname=&amp;e=1514442795&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:wX1LfWieeycOo_hyS5VuzqLwlI0" alt="image"></p>
+<p>最后发现是在path那里多加了单引号导致的，删掉之后完美运行。</p>
+<p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_right.png?attname=&amp;e=1514443115&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:gfnTqUBePUl5Rt75RasB0MOzqbQ" alt="image"></p>
+<p><img src="http://p16vszsby.bkt.clouddn.com/working.png?attname=&amp;e=1514444154&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:2sxnQUGhmN986J0rKsjDYv9lKc4" alt="iamge"></p>
+]]></content>
+      
+        <categories>
+            
+            <category> Rails </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Rails  </tag>
+            
+            <tag> Exception </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[[Ynaqdh]到底是什么意思(what’s the meaning of [Ynadqh])]]></title>
       <url>/2017/12/25/ynapdh/</url>
       <content type="html"><![CDATA[<p><img src="http://p16vszsby.bkt.clouddn.com/ynaqdh.png?attname=&amp;e=1514196708&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:u-odOyrV96PHiZXnu5TU2z-3_q4" alt="image"></p>
