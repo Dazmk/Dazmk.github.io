@@ -3,6 +3,32 @@
   
     
     <entry>
+      <title><![CDATA[关闭树莓派休眠（Prohibited raspberry PI sleeping）]]></title>
+      <url>/2018/02/07/%E5%85%B3%E9%97%AD%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BC%91%E7%9C%A0/</url>
+      <content type="html"><![CDATA[<h2 id="禁止树莓派休眠"><a href="#禁止树莓派休眠" class="headerlink" title="禁止树莓派休眠"></a>禁止树莓派休眠</h2><ol>
+<li>打开Terminal后输入下面这行代码<blockquote>
+<figure class="highlight plain"><figcaption><span>nano</span><a href="/etc/lightdm/lightdm.conf```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. 按下**&quot;Ctrl + w&quot;** 来查找 **[Seat:*]** , 在这附近的下面几行代码中你会看到如下代码</span><br><span class="line">&gt; ```# xserver-command=X```  </span><br><span class="line"></span><br><span class="line">将代码改成</span><br><span class="line"></span><br><span class="line">&gt; ```xserver-command = X -s 0 -dpms```  </span><br><span class="line"></span><br><span class="line">这行代码的意思就是关闭屏幕保护程序以及电源的省电模式</span><br><span class="line"></span><br><span class="line">3. 重启</span><br><span class="line">&gt; ```reboot</span><br></pre></td></tr></table></figure>
+</blockquote>
+</li>
+</ol>
+]]></content>
+      
+        <categories>
+            
+            <category> Raspberry PI </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Raspberry PI </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Ruby on Rails 提示没有匹配的路由(no route matches)]]></title>
       <url>/2017/12/28/Ruby-on-Rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches/</url>
       <content type="html"><![CDATA[<h1 id="No-route-matches"><a href="#No-route-matches" class="headerlink" title="No route matches"></a>No route matches</h1><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_matches.png?attname=&amp;e=1514442700&amp;token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:ZqqhszZqoE67WXLDgRgK12iS8MM" alt="image"></p>
