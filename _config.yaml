@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
+title: Dashy
+subtitle: Dashy
+description: Android Developer
+keywords: Android Developer
+author: Dashy
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://www.dashy.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -93,9 +93,43 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: material-x
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/Dazmk/dazmk.github.io
+# 页脚社交信息
+social:
+  - icon: fas fa-envelope
+    url: dazmk@foxmail.com
+  - icon: fab fa-github
+    url: https://github.com/Dazmk
+  - icon: fas fa-music
+    url: https://music.163.com/#/user/home?id=369029500
+footer: 'By Dashy'
+# 分享按钮
+# 当id为qrcode时需要安装插件  npm i -S hexo-helper-qrcode
+# todo 待替换
+# share:
+#   - id: qq
+#     name: QQ好友
+#     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png
+#   - id: qzone
+#     name: QQ空间
+#     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png
+#   # - id: qrcode
+#   #   name: 微信
+#   #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/wechat.png
+#   - id: weibo
+#     name: 微博
+#     img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png
+#   # - id: qrcode
+#   #   name: QRcode
+#   #   img: https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qrcode.png
+# hexo-admin authentification
+admin:
+  username: dashy
+  password_hash: $2a$10$.5ebZDCZCV.g3k75AA.3p.NfjRBSHjGz95XiU1oyv9s0CRPP7xnEe
+  secret: keith
