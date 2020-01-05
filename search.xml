@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>[Ynaqdh]到底是什么意思(what’s the meaning of [Ynadqh])</title>
+      <link href="/2019/01/05/%5BYnaqdh%5D%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D(what%E2%80%99s%20the%20meaning%20of%20%5BYnadqh%5D)/"/>
+      <url>/2019/01/05/%5BYnaqdh%5D%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D(what%E2%80%99s%20the%20meaning%20of%20%5BYnadqh%5D)/</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://p16vszsby.bkt.clouddn.com/ynaqdh.png?attname=&e=1514196708&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:u-odOyrV96PHiZXnu5TU2z-3_q4" alt="image"></p><p>使用Mac终端时经常会碰见上图中的提醒 ++<strong>[ynaqdh]</strong>++ ,下面简单说明一下：</p><ul><li>Y - yes,  overwrite</li><li>n - no,   do not overwrite</li><li>a - all,  overwrite this and all others</li><li>q - quit, abort</li><li>d - diff, show the differences between the old and the new</li><li>h - help, show this help</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>第一行代码总结</title>
+      <link href="/2018/12/12/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%80%BB%E7%BB%93/"/>
+      <url>/2018/12/12/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%80%BB%E7%BB%93/</url>
+      
+        <content type="html"><![CDATA[<ol><li>Android系统架构</li><li>为什么使用Log而不是System.out +</li><li>Activity的基本用法</li><li>Activity中如何使用Menu</li><li>Intent的使用(显示和隐式)</li><li>向下(上)一个Activity传递数据</li><li>Activity的四种状态,7个方法,3种生存期</li><li>Activity被回收了如何保存和恢复数据</li><li>Activity的四种启动模式</li><li>Activity的实践: 如何知晓当前Activity名称,如何随时退出程序,启动活动的最佳写法</li><li>常用系统控件: AlertDialog+构建,ProgressBar的构建</li><li>四种基本布局</li><li>引入布局,创建自定义控件</li><li>提升ListView性能,ListView点击事件</li><li>RecyclerView的基本用法(Adapter的编写),实现横向滚动和瀑布式布局</li><li>RecyclerView点击事件</li><li>Fragment的基本用法: 动态添加fragment(限定符的使用), 模拟返回栈, fragment与Activity之间通信</li><li>fragment的生命周期,4种状态,比Activity多了5个回调方法</li><li>广播机制简介(标准广播和有序广播)</li><li>如何接收广播(动态注册&amp;静态注册)</li><li>如何发送广播(标准&amp;有序) 如何使用本地广播</li><li>广播实践: 实现强制下线</li><li>数据持久化技术<br>1) 如何将数据写入文件中(以及读取)<br>2) 如何将数据存储到SharedPreferences(以及读取)<br>3) SQLite的使用(增删改查)<br>4) LitePal的使用(增删改查)</li><li>在程序运行时申请权限</li><li>ContentResolver 的基本用法(读取系统联系人)</li><li>创建自己的内容提供器ContentProvider</li><li>Notification 的使用,添加PendingIntent,点击之后消失的功能</li><li>Notification 进阶使用: 设置震动,提示音,呼吸灯,大文本,大图,优先级</li><li>调用摄像头拍照</li><li>从相册中选取照片</li><li>播放音频 播放视频</li><li>WebView的用法</li><li>HttpURLConnection的基本使用</li><li>OKHttp的基本使用</li><li>解析XML格式数据(PULL解析&amp;SAX解析)</li><li>解析JSON格式数据(JSonObjective&amp;Gson)</li><li>子线程中更新UI</li><li>异步消息处理机制分析</li><li>AsyncTask 的基本用法</li><li>服务的基本用法,启动和停止服务</li><li>活动和服务进行通信</li><li>Service 小技巧: 前台服务, IntentService</li><li>LBS(Location Based Serveice)基本位置的服务<br>1) 确定自己的位置<br>2) 实时更新当前的位置<br>3) 选择定位模式<br>4) 添加省市县位置信息<br>5) 让地图显示出来<br>6) 移动到我的位置<br>7) 让我显示出来</li><li>Material Design简介<br>Toolbar的基本用法(添加Menu,点击事件,最左加入一个导航按钮)<br>DrawerLayout 的基本用法(侧滑显示菜单)<br>NavigationView(侧滑菜单,Menu和headerLayout)<br>FloatingActionBar(悬浮按钮)<br>Snackbar(增加Undo按钮)<br>CoordinateLayout(加强版FrameLayout,自动帮助我们做出最为合理的响应)<br>CardView(卡片式布局)<br>APPBarLayout(防止滑动RecyclerView时遮挡Toolbar,该控件必须是CoordinateLayout的子布局)<br>SwipeRefreshLayout(下拉刷新)<br>CollapsingToolbarLayout(可折叠式标题,仅能作为APPBarLayout直接子布局使用)</li><li>充分利用系统状态栏</li><li>全局获取Context</li><li>使用Intent传递对象(Serializable方式和Parcelable方式)</li><li>创建定时任务,Alarm机制</li><li>Doze模式,多窗口模式</li><li>Lambda表达式</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Android </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Android </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何在Mac上卸载Java</title>
+      <link href="/2018/02/27/%E5%A6%82%E4%BD%95%E5%9C%A8Mac%E4%B8%8A%E5%8D%B8%E8%BD%BDJava/"/>
+      <url>/2018/02/27/%E5%A6%82%E4%BD%95%E5%9C%A8Mac%E4%B8%8A%E5%8D%B8%E8%BD%BDJava/</url>
+      
+        <content type="html"><![CDATA[<p>在“终端”窗口中，复制和粘贴命令：</p><p>sudo rm -fr /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin</p><p>sudo rm -fr /Library/PreferencesPanes/JavaControlPanel.prefPane</p><p>sudo rm -fr ~/Library/Application\ Support/Java</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Mac </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Mac </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>配置开机自启rails以及chromium</title>
+      <link href="/2018/02/06/%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AFrails%E4%BB%A5%E5%8F%8Achromium/"/>
+      <url>/2018/02/06/%E9%85%8D%E7%BD%AE%E5%BC%80%E6%9C%BA%E8%87%AA%E5%90%AFrails%E4%BB%A5%E5%8F%8Achromium/</url>
+      
+        <content type="html"><![CDATA[<p><img src="http://p16vszsby.bkt.clouddn.com/stories_logo.svg?attname=&e=1517555769&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:dVrK4uzv6s1E5ukGOGGRYGc4zqM" alt="image"></p><h1 id="Stories-Dashboard"><a href="#Stories-Dashboard" class="headerlink" title="Stories Dashboard"></a>Stories Dashboard</h1><p>To startup rails and chromium when the raspberry PI startup.  </p><p><img src="https://img.shields.io/badge/rails-5.1.4-red.svg" alt="rails"> <img src="https://img.shields.io/badge/ruby-2.5.0-blue.svg" alt="ruby"> <img src="https://img.shields.io/badge/created-Jan%202018-brightgreen.svg" alt="created"></p><ol><li><strong>Clone repo</strong>, open Terminal enter this code</li></ol><blockquote><figure class="highlight plain"><figcaption><span>clone git@github.com:namiwang/stories-dashboard.git```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">2. **Install gems**, run this lines of codes separately</span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;cd stories-dashboard&#96;&#96;&#96;  </span><br><span class="line">&#96;&#96;&#96;bundle </span><br></pre></td></tr></table></figure></blockquote><ol start="3"><li><strong>Change path</strong>, if the path you choose don’t like this <code>/home/pi/workspace/stories-dashboard</code>, you must edit two files in stories-dashboard/app/bin </li></ol><ul><li><p>startup</p><p>  change<br>  <del><code>cd /home/pi/workspace/stories-dashboard</code></del><br>  into  </p>  <figure class="highlight plain"><figcaption><span>/yourpath/stories-dashboard```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- rc.local</span><br><span class="line"></span><br><span class="line">    change  </span><br><span class="line">    ~~&#96;&#96;&#96;su pi -c &quot;exec &#x2F;home&#x2F;pi&#x2F;workspace&#x2F;stories-dashboard&#x2F;bin&#x2F;startup&quot;&#96;&#96;&#96;~~  </span><br><span class="line">    into  </span><br><span class="line">    &#96;&#96;&#96;su pi -c &quot;exec &#x2F;yourpath&#x2F;stories-dashboard&#x2F;bin&#x2F;startup&quot;</span><br></pre></td></tr></table></figure><ol start="4"><li><blockquote><p><code>reboot</code> </p></blockquote></li></ol></li></ul><h2 id="Prohibited-raspberry-PI-sleeping"><a href="#Prohibited-raspberry-PI-sleeping" class="headerlink" title="Prohibited raspberry PI sleeping"></a>Prohibited raspberry PI sleeping</h2><ol><li>Open Terminal enter this command<blockquote><figure class="highlight plain"><figcaption><span>nano</span><a href="/etc/lightdm/lightdm.conf```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. Press **&quot;Ctrl + w&quot;** to find &#x3D;&#x3D;[Seat:*]&#x3D;&#x3D;, after this few lines you will see </span><br><span class="line">&#96;&#96;&#96;# xserver-command&#x3D;X&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">change it into  </span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;xserver-command &#x3D; X -s 0 -dpms&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">it means to Close the screen saver and Display Power Management Signaling.</span><br><span class="line"></span><br><span class="line">3. &gt; &#96;&#96;&#96;reboot </span><br></pre></td></tr></table></figure></blockquote></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry Pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+            <tag> Raspberry Pi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>树莓派禁止休眠</title>
+      <link href="/2018/02/03/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%A6%81%E6%AD%A2%E4%BC%91%E7%9C%A0/"/>
+      <url>/2018/02/03/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%A6%81%E6%AD%A2%E4%BC%91%E7%9C%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Prohibited-raspberry-PI-sleeping"><a href="#Prohibited-raspberry-PI-sleeping" class="headerlink" title="Prohibited raspberry PI sleeping"></a>Prohibited raspberry PI sleeping</h2><ol><li>Open Terminal enter this command<blockquote><figure class="highlight plain"><figcaption><span>nano</span><a href="/etc/lightdm/lightdm.conf```">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">2. Press **&quot;Ctrl + w&quot;** find &#x3D;&#x3D;[Seat:*]&#x3D;&#x3D;, after this few lines you will see </span><br><span class="line">&#96;&#96;&#96;# xserver-command&#x3D;X&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">change it into  </span><br><span class="line"></span><br><span class="line">&#96;&#96;&#96;xserver-command &#x3D; X -s 0 -dpms&#96;&#96;&#96;  </span><br><span class="line"></span><br><span class="line">it means to Close the screen saver and Display Power Management Signaling.</span><br><span class="line">3. &gt; &#96;&#96;&#96;reboot </span><br></pre></td></tr></table></figure></blockquote></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry Pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Raspberry Pi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>树莓派开启启动自定义脚本</title>
+      <link href="/2018/02/01/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%90%AF%E5%90%AF%E5%8A%A8/"/>
+      <url>/2018/02/01/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%90%AF%E5%90%AF%E5%8A%A8/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>nano /etc/rc.local 修改开机启动文件</p><p> 在 exit 0 这行代码之前添加</p><blockquote><p>  su pi -c “exec /home/pi/stories.sh”</p></blockquote></li></ol><ol start="2"><li>编辑启动rails server 和 Chromium 的脚本</li></ol><blockquote><p> #!/bin/sh</p><p>cd /home/pi/Documents/stories_dashboard</p><p>source ~/.profile</p><p>rails s &amp;</p><p>sleep 15</p><p>DISPLAY=:0 chromium-browser -kiosk <a href="http://localhost:3000" target="_blank" rel="noopener">http://localhost:3000</a></p></blockquote><p>3.不要忘了修改stories.sh的权限</p><blockquote><pre><code>chmod 777 stories.sh</code></pre></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> Raspberry Pi </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+            <tag> Raspberry Pi </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Rails 提示  Looks like your apps bin rails is a stub that was generated by Bund</title>
+      <link href="/2017/12/28/Rails-%E6%8F%90%E7%A4%BA-Looks-like-your-apps-bin-rails-is-a-stub-that-was-generated-by-Bund/"/>
+      <url>/2017/12/28/Rails-%E6%8F%90%E7%A4%BA-Looks-like-your-apps-bin-rails-is-a-stub-that-was-generated-by-Bund/</url>
+      
+        <content type="html"><![CDATA[<p>Rails 提示 Looks like your app’s ./bin/rails is a stub that was generated by Bundler.</p><p><img src="http://p16vszsby.bkt.clouddn.com/rails_issue_tips.png?attname=&e=1514445128&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:LyVSwgYzyFIGDFLy6dUX_8sIWi8" alt="image"></p><h6 id="无缘无故的输入rails相关指令出现了一大堆tips，目前还没有影响运行，但是看着很不爽。"><a href="#无缘无故的输入rails相关指令出现了一大堆tips，目前还没有影响运行，但是看着很不爽。" class="headerlink" title="无缘无故的输入rails相关指令出现了一大堆tips，目前还没有影响运行，但是看着很不爽。"></a>无缘无故的输入rails相关指令出现了一大堆tips，目前还没有影响运行，但是看着很不爽。</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Looks like your app&#39;s .&#x2F;bin&#x2F;rails is a stub that was generated by Bundler.</span><br><span class="line"></span><br><span class="line">In Rails 5, your app&#39;s bin&#x2F; directory contains executables that are versioned</span><br><span class="line">like any other source code, rather than stubs that are generated on demand.</span><br><span class="line"></span><br><span class="line">Here&#39;s how to upgrade:</span><br><span class="line"></span><br><span class="line">  bundle config --delete bin    # Turn off Bundler&#39;s stub generator</span><br><span class="line">  rails app:update:bin          # Use the new Rails 5 executables</span><br><span class="line">  git add bin                   # Add bin&#x2F; to source control</span><br><span class="line"></span><br><span class="line">You may need to remove bin&#x2F; from your .gitignore as well.</span><br></pre></td></tr></table></figure><h6 id="尝试按照其中的提示解决这个问题"><a href="#尝试按照其中的提示解决这个问题" class="headerlink" title="尝试按照其中的提示解决这个问题"></a>尝试按照其中的提示解决这个问题</h6><p>输入如下指令</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails app:update:bin</span><br></pre></td></tr></table></figure><p><img src="http://p16vszsby.bkt.clouddn.com/rails_issue_solution.png?attname=&e=1514445128&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:gMnRViHhqWh6oDmB1qK7LGj-dqY" alt="image"></p><p>问题完美解决了。</p><p><img src="http://p16vszsby.bkt.clouddn.com/rails_issue_result.png?attname=&e=1514445128&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:Qhu1XGU8QnHi4hoLXLFXD7XyjGA" alt="image"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ror教程（ruby on rails）3</title>
+      <link href="/2017/12/28/ror%E6%95%99%E7%A8%8B%EF%BC%88ruby-on-rails%EF%BC%893/"/>
+      <url>/2017/12/28/ror%E6%95%99%E7%A8%8B%EF%BC%88ruby-on-rails%EF%BC%893/</url>
+      
+        <content type="html"><![CDATA[<p>Hash.new 可接受一个参数指明元素的默认值，即当键不存在时返回的值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; h &#x3D; Hash.new</span><br><span class="line">&#x3D;&gt; &#123;&#125;</span><br><span class="line">&gt;&gt; h[:foo]            # 试图获取不存在的键 :foo 对应的值</span><br><span class="line">&#x3D;&gt; nil</span><br><span class="line">&gt;&gt; h &#x3D; Hash.new(0)    # 让不存在的键返回 0 而不是 nil</span><br><span class="line">&#x3D;&gt; &#123;&#125;</span><br><span class="line">&gt;&gt; h[:foo]</span><br><span class="line">&#x3D;&gt; 0</span><br></pre></td></tr></table></figure><p>在类中调用方法或访问属性时可以不用 self.（赋值例外）</p><h2 id="Confuse"><a href="#Confuse" class="headerlink" title="Confuse"></a>Confuse</h2><h1 id="不理解-yield"><a href="#不理解-yield" class="headerlink" title="不理解 yield"></a>不理解 yield</h1><p>pbcopy ~/.ssh/id_rsa.pub</p><p> .card-img-overlay<br>      .d-flex.pt-5.pb-3.px-2<br>        .card-text.text-white.pl-2= post.summary</p><pre><code>tag颜色，动态加载，搜索，排行。react，flutter。</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rails 提示没有匹配的路由(no route matches)</title>
+      <link href="/2017/12/27/rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches-1/"/>
+      <url>/2017/12/27/rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="No-route-matches"><a href="#No-route-matches" class="headerlink" title="No route matches"></a>No route matches</h1><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_matches.png?attname=&e=1514442700&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:ZqqhszZqoE67WXLDgRgK12iS8MM" alt="image"></p><p>今天在跟着做 Ruby on Rails 教程第五章的例子时，遇到了一个问题 No route maches</p><p>代码如下</p><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_code.png?attname=&e=1514442795&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:wX1LfWieeycOo_hyS5VuzqLwlI0" alt="image"></p><p>最后发现是在path那里多加了单引号导致的，删掉之后完美运行。</p><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_right.png?attname=&e=1514443115&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:gfnTqUBePUl5Rt75RasB0MOzqbQ" alt="image"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rails 提示没有匹配的路由(no route matches)</title>
+      <link href="/2017/12/27/rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches/"/>
+      <url>/2017/12/27/rails-%E6%8F%90%E7%A4%BA%E6%B2%A1%E6%9C%89%E5%8C%B9%E9%85%8D%E7%9A%84%E8%B7%AF%E7%94%B1-no-route-matches/</url>
+      
+        <content type="html"><![CDATA[<h1 id="No-route-matches"><a href="#No-route-matches" class="headerlink" title="No route matches"></a>No route matches</h1><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_matches.png?attname=&e=1514442700&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:ZqqhszZqoE67WXLDgRgK12iS8MM" alt="image"></p><p>今天在跟着做 Ruby on Rails 教程第五章的例子时，遇到了一个问题 No route maches</p><p>代码如下</p><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_code.png?attname=&e=1514442795&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:wX1LfWieeycOo_hyS5VuzqLwlI0" alt="image"></p><p>最后发现是在path那里多加了单引号导致的，删掉之后完美运行。</p><p><img src="http://p16vszsby.bkt.clouddn.com/no_route_maches_right.png?attname=&e=1514443115&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:gfnTqUBePUl5Rt75RasB0MOzqbQ" alt="image"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ror教程(ruby on rails)2</title>
+      <link href="/2017/12/27/demo/"/>
+      <url>/2017/12/27/demo/</url>
+      
+        <content type="html"><![CDATA[<p>test controller 中可以通过使用setup来初始化一些变量</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">require &#39;test_helper&#39;</span><br><span class="line"></span><br><span class="line">class StaticPagesControllerTest &lt; ActionDispatch::IntegrationTest</span><br><span class="line"></span><br><span class="line">  def setup</span><br><span class="line">    @base_title &#x3D; &quot;Ruby on Rails Tutorial Sample App&quot;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  test &quot;should get home&quot; do</span><br><span class="line">    get static_pages_home_url</span><br><span class="line">    assert_response :success</span><br><span class="line">    assert_select &quot;title&quot;, &quot;Home | #&#123;@base_title&#125;&quot; </span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  test &quot;should get help&quot; do</span><br><span class="line">    get static_pages_help_url</span><br><span class="line">    assert_response :success</span><br><span class="line">    assert_select &quot;title&quot;, &quot;Help | #&#123;@base_title&#125;&quot;</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  test &quot;should get about&quot; do</span><br><span class="line">    get static_pages_about_url</span><br><span class="line">    assert_response :success</span><br><span class="line">    assert_select &quot;title&quot;, &quot;About | #&#123;@base_title&#125;&quot;</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure><p>定义和使用变量时不要忘记加 @ 符号</p><p>provide </p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;% provide(:title, &quot;Home&quot;) %&gt;</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;title&gt;&lt;%&#x3D; yield(:title) %&gt; | Ruby on Rails Tutorial Sample App&lt;&#x2F;title&gt;</span><br><span class="line">  &lt;&#x2F;head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;h1&gt;Sample App&lt;&#x2F;h1&gt;</span><br><span class="line">    &lt;p&gt;</span><br><span class="line">      This is the home page for the</span><br><span class="line">      &lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.railstutorial.org&#x2F;&quot;&gt;Ruby on Rails Tutorial&lt;&#x2F;a&gt;</span><br><span class="line">      sample application.</span><br><span class="line">    &lt;&#x2F;p&gt;</span><br><span class="line">  &lt;&#x2F;body&gt;</span><br><span class="line">&lt;&#x2F;html&gt;</span><br></pre></td></tr></table></figure><p>provide 与 content_for 区别</p><blockquote><p>The same as content_for but when used with streaming flushes straight back to the layout. In other words, if you want to concatenate several times to the same buffer when rendering a given template, you should use content_for, if not, use provide to tell the layout to stop looking for more contents.</p></blockquote><p>not something we can merge</p><p>单引号字符串不能进行插值操作</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; string &#x3D; &#39;dashy&#39;</span><br><span class="line">&#x3D;&gt; &quot;dashy&quot;</span><br><span class="line">&gt;&gt; puts &quot;The string &#39;#&#123;string&#125;&#39; is nonempty.&quot; if string.empty?</span><br><span class="line">&#x3D;&gt; nil</span><br><span class="line">&gt;&gt; puts &quot;The string &#39;#&#123;string&#125;&#39; is nonempty.&quot; unless string.empty?</span><br><span class="line">The string &#39;dashy&#39; is nonempty.</span><br><span class="line">&#x3D;&gt; nil</span><br></pre></td></tr></table></figure><p>可以使用 !!（读作“bang bang”）对对象做两次取反操作，把对象转换成布尔值</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; a &#x3D; %w[foo bar baz quux]</span><br><span class="line">&#x3D;&gt; [&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;, &quot;quux&quot;]</span><br><span class="line">&gt;&gt; a[0..2]</span><br><span class="line">&#x3D;&gt; [&quot;foo&quot;, &quot;bar&quot;, &quot;baz&quot;]</span><br></pre></td></tr></table></figure><p>值域的结束值使用 -1 时，不用知道数组的长度就能从起始值开始一直获取到最后一个元素。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ror教程（ruby on rails）1</title>
+      <link href="/2017/12/26/ror%E6%95%99%E7%A8%8B%EF%BC%88ruby%20rails%EF%BC%891/"/>
+      <url>/2017/12/26/ror%E6%95%99%E7%A8%8B%EF%BC%88ruby%20rails%EF%BC%891/</url>
+      
+        <content type="html"><![CDATA[<p> git rm -r –cached .<br> 删除暂存区中的全部文件(未commit 已add)<br> git checkout -f<br> 恢复未add 的文件</p><p> scaffold 脚手架生成资源<br> 资源可以理解为model（数据模型）+view（web页面），可以通过http协议在网页中创建、读取、更新和删除。</p><p> REST 架构由计算机科学家 Roy Fielding 提出，意思是“表现层状态转化”（Representational State Transfer）</p><p> REST 是一种架构风格，用于开发分布式、基于网络的系统和软件应用，例如万维网和 Web 应用。REST 理论很抽象，在 Rails 应用中，REST 意味着大多数组件（例如用户和微博）都被模型化，变成资源（resource），可以创建（create）、读取（read）、更新（update）和删除（delete）。这些操作与关系型数据库中的 CRUD 操作和 HTTP 请求方法（POST、GET、PATCH 和 DELETE）对应。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Rails </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>BMI 计算器(BMI Calculator)</title>
+      <link href="/2017/12/21/BMI%20%E8%AE%A1%E7%AE%97%E5%99%A8(BMI%20Calculator)/"/>
+      <url>/2017/12/21/BMI%20%E8%AE%A1%E7%AE%97%E5%99%A8(BMI%20Calculator)/</url>
+      
+        <content type="html"><![CDATA[<p>这两天看高見龍老师的为你自己学ruby on rails 教程，其中有一个比较简单的Demo，就是这个BMI <a href="http://railsbook.tw/chapters/12-controllers.html#bmi-calculator" target="_blank" rel="noopener">Calculator</a>，自己动手跟着实现了一下，顺便写一篇博客记录一下，加深印象。</p><p>最终效果如下，输入身高体重点击开始计算后会得出BMI值，UI比较简陋，重要的是理解rails的整个流程。<br><img src="http://p16vszsby.bkt.clouddn.com/image/bmi_calculator_1.png?attname=&e=1513831002&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:l3Y4HWpFHBt6bGhG6GaSNcoJnOU" alt="image"></p><p><img src="http://p16vszsby.bkt.clouddn.com/image/bmi_calculator_2.png?attname=&e=1513831002&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:coxWBD3UH2mypunrMJHsM5irGVc" alt="image"></p><ol start="0"><li>新建一个rails项目：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rails new bmi</span><br></pre></td></tr></table></figure></li><li>创建控制器(controller)</li></ol><p>首先切换到项目</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd bmi</span><br></pre></td></tr></table></figure><p>之后输入如下指令用来创建控制器</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">rails generate controller bmi index</span><br><span class="line">或者</span><br><span class="line">rails g controller bmi index</span><br></pre></td></tr></table></figure><p>上面的指令会自动帮助我们做三件事</p><ul><li><p>加上route,打开config/route.rb文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Rails.application.routes.draw do</span><br><span class="line">  get &#39;bmi&#x2F;index&#39;</span><br><span class="line"></span><br><span class="line">  # For details on the DSL available within this file, see http:&#x2F;&#x2F;guides.rubyonrails.org&#x2F;routing.html</span><br><span class="line">end</span><br></pre></td></tr></table></figure><p>将其中的</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get &#39;bmi&#x2F;index&#39;</span><br></pre></td></tr></table></figure><p>改写成</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">get &#39;bmi&#39;, to: &#39;bmi#index&#39;</span><br></pre></td></tr></table></figure><p>并且添加</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post &quot;bmi&#x2F;result&quot;, to: &quot;bmi#result&quot;</span><br></pre></td></tr></table></figure></li><li><p>controller中加上名为 index 的 Action<br>打开app/controllers/bmi_controller.rb,其中内容如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">class BmiController &lt; ApplicationController</span><br><span class="line">  def index</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></li><li><p>创建app/views/bmi/index.html.erb文件<br>打开app/views/bmi/index.html.erb,其中内容如下</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;Bmi#index&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;p&gt;Find me in app&#x2F;views&#x2F;bmi&#x2F;index.html.erb&lt;&#x2F;p&gt;</span><br></pre></td></tr></table></figure></li></ul><ol start="2"><li>建立输入表单<br>编辑index.html.erb，将其改为如下内容<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;BMI 计算器&lt;&#x2F;h1&gt;</span><br><span class="line">&lt;%&#x3D; form_tag &#39;bmi&#x2F;result&#39; do %&gt; </span><br><span class="line">  身高: &lt;%&#x3D; text_field_tag &#39;body_height&#39; %&gt; 公分&lt;br&#x2F;&gt;</span><br><span class="line">  体重: &lt;%&#x3D; text_field_tag &#39;body_weight&#39; %&gt; 公斤&lt;br&#x2F;&gt;</span><br><span class="line">  &lt;%&#x3D; submit_tag &#39;开始计算&#39; %&gt;</span><br><span class="line">&lt;% end %&gt;</span><br></pre></td></tr></table></figure>form_tag,text_field_tag 和 submit_tag 是 rails 的 <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html" target="_blank" rel="noopener">TagHelper</a>,可以点进去详细的看一下。</li></ol><p>看一下index页面的源码，这些都是刚刚的TagHelper的功劳。<br><img src="http://p16vszsby.bkt.clouddn.com/image/form_tag.png?attname=&e=1513835331&token=NYX5b6QaVFGMB5vzHSgy0lp2jGcBlHXbg7YIca07:0Rg6pMzVRppl4XgWcM2KzySN9tc" alt="image"></p><ol start="3"><li>现在输入的表单有了，需要去实现计算BMI的功能，上一步的表单会把数据提交到result的action计算。编辑app/controller/bmi_controller.rb,添加名为result的action<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">class BmiController &lt; ApplicationController</span><br><span class="line">  def index</span><br><span class="line">  end</span><br><span class="line"></span><br><span class="line">  def result</span><br><span class="line">    height &#x3D; params[:body_height].to_f &#x2F; 100</span><br><span class="line">    weight &#x3D; params[:body_weight].to_f</span><br><span class="line"></span><br><span class="line">    @bmi &#x3D; (weight&#x2F; (height * height)).round(2)</span><br><span class="line">  end</span><br><span class="line">end</span><br></pre></td></tr></table></figure></li><li>计算出的结果需要显示出来，所以我们需要新建一个app/views/bmi/result.html.erb文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;h1&gt;您的BMI值为: &lt;%&#x3D; @bmi %&gt; &lt;h1&gt;</span><br></pre></td></tr></table></figure></li></ol><p>现在项目部署一下应该就可以成功运行了~</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Rails </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何重新命名Git分支（how to rename a git branch locally and remotely?</title>
+      <link href="/2017/12/15/rename-git-branch/"/>
+      <url>/2017/12/15/rename-git-branch/</url>
+      
+        <content type="html"><![CDATA[<ol><li>git branch -m <old_name> <new_name></li><li>git checkout <new_name></li><li>git push origin <new_name></li><li>git push origin -d <old_name></li></ol><p>参考自：<a href="https://stackoverflow.com/questions/36999937/how-to-rename-a-git-branch-locally-and-remotely++" target="_blank" rel="noopener">https://stackoverflow.com/questions/36999937/how-to-rename-a-git-branch-locally-and-remotely++</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
