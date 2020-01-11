@@ -447,7 +447,19 @@
 
 
 
-  
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+        <section id="comments">
+          <div id="gitalk-container"></div>
+        </section>
+      
+      
+    </section>
+  </article>
 
 
 
@@ -702,7 +714,7 @@
     <div class='content pure'>
       <ul class="entry">
         
-          <li><a class="flat-box" title="/categories/Android/" href="/categories/Android/"><div class='name'>Android</div><div class='badge'>(1)</div></a></li>
+          <li><a class="flat-box" title="/categories/Android/" href="/categories/Android/"><div class='name'>Android</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box" title="/categories/Mac/" href="/categories/Mac/"><div class='name'>Mac</div><div class='badge'>(1)</div></a></li>
         
@@ -759,7 +771,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/Android/" style="font-size: 14px; color: #999">Android</a> <a href="/tags/Git/" style="font-size: 14px; color: #999">Git</a> <a href="/tags/Mac/" style="font-size: 14px; color: #999">Mac</a> <a href="/tags/Rails/" style="font-size: 24px; color: #555">Rails</a> <a href="/tags/Raspberry-Pi/" style="font-size: 19px; color: #777">Raspberry Pi</a>
+      <a href="/tags/Android/" style="font-size: 14px; color: #999">Android</a> <a href="/tags/Git/" style="font-size: 14px; color: #999">Git</a> <a href="/tags/HTTPS/" style="font-size: 14px; color: #999">HTTPS</a> <a href="/tags/Mac/" style="font-size: 14px; color: #999">Mac</a> <a href="/tags/Rails/" style="font-size: 24px; color: #555">Rails</a> <a href="/tags/Raspberry-Pi/" style="font-size: 19px; color: #777">Raspberry Pi</a>
     </div>
   </section>
 
@@ -964,6 +976,23 @@
 
 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "a28973d877a6840fa687",
+      clientSecret: "386588d1df73366856c39f8ffed191e8b8322fcf",
+      repo: "dazmk.github.io",
+      owner: "Dazmk",
+      admin: "Dazmk",
+      
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+  </script>
 
 
 

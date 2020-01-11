@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Category: Android | Dashy</title>
+  <title>证书文件格式互转(cer/crt/jks/bks/keystore/pem...) | Dashy</title>
   
   <meta name="keywords" content="Android Developer">
   
@@ -52,7 +52,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover  half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>Dashy's Blog</h1>
@@ -231,27 +231,11 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      
-<div class='l_main'>
+      <div class='l_main'>
   
+
+  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
     
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
 
 
   <section class='meta'>
@@ -260,11 +244,13 @@
     <div class="meta" id="header-meta">
       
         
-  <h2 class="title">
-    <a href="/2020/01/11/%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E4%BA%92%E8%BD%AC/">
-      证书文件格式互转(cer/crt/jks/bks/keystore/pem...)
-    </a>
-  </h2>
+  
+    <h1 class="title">
+      <a href="/2020/01/11/%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E4%BA%92%E8%BD%AC/">
+        证书文件格式互转(cer/crt/jks/bks/keystore/pem...)
+      </a>
+    </h1>
+  
 
 
       
@@ -314,6 +300,24 @@
           
             
   
+    <div class="new-meta-item browse busuanzi">
+      <a class='notlink'>
+        <i class="fas fa-eye" aria-hidden="true"></i>
+        <p>
+          <span id="busuanzi_value_page_pv">
+            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+          </span>
+        </p>
+      </a>
+    </div>
+  
+
+
+          
+        
+          
+            
+  
     <div class="new-meta-item wordcount">
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
@@ -345,166 +349,208 @@
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
-      
-      
-        <div class="readmore">
-          <a href="/2020/01/11/%E8%AF%81%E4%B9%A6%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E4%BA%92%E8%BD%AC/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/HTTPS/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> HTTPS</a>
-        
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <table>
+<thead>
+<tr>
+<th>序号</th>
+<th>源证书文件格式</th>
+<th>目标证书文件格式</th>
+<th>所需命令</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>keystore</td>
+<td>p12</td>
+<td>keytool -importkeystore -srckeystore xxxx.keystore -srcstoretype JKS -deststoretype PKCS12 -destkeystore xxx.p12</td>
+</tr>
+<tr>
+<td>2</td>
+<td>p12</td>
+<td>jks</td>
+<td>keytool -importkeystore -srckeystore xxx.p12 -srcstoretype PKCS12 -deststoretype JKS -destkeystore xxx.jks</td>
+</tr>
+<tr>
+<td>3</td>
+<td>pk8</td>
+<td>pem</td>
+<td>openssl pkcs8 -inform DER -nocrypt -in xxx.pk8 -out xxx.pem</td>
+</tr>
+<tr>
+<td>4</td>
+<td>pem</td>
+<td>pks12</td>
+<td>openssl pkcs12 -export -in xxx.x509.pem -inkey platform.pem -out xxx.pkcs12</td>
+</tr>
+<tr>
+<td>5</td>
+<td>pks12</td>
+<td>jks</td>
+<td>keytool -importkeystore -srckeystore xxx.pkcs12  -srcstoretype pkcs12 -srcstorepass android  -destkeystore xxx.jks -deststoretype jks -deststorepass android</td>
+</tr>
+<tr>
+<td>6</td>
+<td>jks</td>
+<td>p12</td>
+<td>keytool -importkeystore -srckeystore xxx.jks -destkeystore xxx.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass android -deststorepass android -srcalias platform -destalias platform -srckeypass android -destkeypass android -noprompt</td>
+</tr>
+<tr>
+<td>7</td>
+<td>p12</td>
+<td>x509.pem</td>
+<td>openssl pkcs12 -in xxx.p12 -nodes -nokeys -out xxx.x509.pem -password pass:android</td>
+</tr>
+<tr>
+<td>8</td>
+<td>p12</td>
+<td>rsa.pem</td>
+<td>openssl pkcs12 -in xxx.p12 -nodes -cacerts -out xxx.rsa.pem -password pass:android</td>
+</tr>
+<tr>
+<td>9</td>
+<td>rsa.pem</td>
+<td>pk8</td>
+<td>openssl pkcs8 -topk8 -outform DER -in xxx.rsa.pem -inform PEM -out xxx.pk8 -nocrypt</td>
+</tr>
+<tr>
+<td>10</td>
+<td>cer</td>
+<td>jks</td>
+<td>keytool -import -file xxx.cer -keystore xxx.jks</td>
+</tr>
+<tr>
+<td>11</td>
+<td>cer</td>
+<td>bks</td>
+<td>keytool -importcert -v -trustcacerts -alias xx -file xxx.cer -keystore xxx.bks -storetype BKS -storepass ‘123456’</td>
+</tr>
+<tr>
+<td>12</td>
+<td>bks</td>
+<td>cer</td>
+<td>keytool -export -alias xx -file xxx.cer -keystore xxx.bks -storetype BKS -provider org.bouncycastle.jce.provider.BouncyCastleProvider -storepass ‘123456’</td>
+</tr>
+<tr>
+<td>13</td>
+<td>cer</td>
+<td>crt</td>
+<td>openssl x509 -inform DER -in xxx.cer -out xxx.crt</td>
+</tr>
+<tr>
+<td>14</td>
+<td>pem</td>
+<td>crt</td>
+<td>openssl x509 -outform der -in xxx.pem -out xxx.crt</td>
+</tr>
+<tr>
+<td>15</td>
+<td>pem</td>
+<td>cer</td>
+<td>openssl x509 -inform pem -in  xxx.pem -outform der -out xxx.cer</td>
+</tr>
+</tbody></table>
+<p>另外:<br>查看 bks 文件中包含的证书<br>keytool -list -rfc -keystore xxx.bks -storetype BKS</p>
+<p>查看 jks 文件中包含的证书<br>keytool -list -rfc -keystore xxx.jks -storetype JKS</p>
+
       </div>
-    
-  </section>
-</article>
-
-          </div>
+      
+      
+        <br>
         
+
+
+  <section class='meta' id="footer-meta">
+    <div class='new-meta-box'>
       
         
-          <div class='post-wrapper'>
-            <article class="post reveal ">
-  
-
-
-  <section class='meta'>
-    
-    
-    <div class="meta" id="header-meta">
-      
-        
-  <h2 class="title">
-    <a href="/2018/12/12/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%80%BB%E7%BB%93/">
-      第一行代码总结
-    </a>
-  </h2>
-
-
-      
-      <div class='new-meta-box'>
-        
-          
-        
-          
-            
-  <div class='new-meta-item author'>
-    
-      <a href="/" rel="nofollow">
-        
-          <i class="fas fa-user" aria-hidden="true"></i>
-        
-        <p></p>
-      </a>
-    
-  </div>
-
-
-          
-        
-          
-            <div class="new-meta-item date">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-11T22:58:11+08:00">
   <a class='notlink'>
-    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2018-12-12</p>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2020年1月11日</p>
   </a>
 </div>
 
-          
         
-          
-            
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Android/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Android</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-  
-    <div class="new-meta-item wordcount">
-      <a class='notlink'>
-        <i class="fas fa-keyboard" aria-hidden="true"></i>
-        <p>字数统计:</p>
-        <p>774字</p>
-      </a>
-    </div>
-    <div class="new-meta-item readtime">
-      <a class='notlink'>
-        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
-        <p>阅读时长≈</p>
-        <p>2分</p>
-      </a>
-    </div>
-  
-
-          
-        
-          
-            
-
-          
-        
-      </div>
       
-        <hr>
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/HTTPS/" rel="nofollow"><i class="fas fa-tag" aria-hidden="true"></i><p>HTTPS</p></a></div>
+
+
+        
+      
+        
+          
+
+        
       
     </div>
   </section>
 
 
-  <section class="article typo">
-    <div class="article-entry" itemprop="articleBody">
       
       
-        <div class="readmore">
-          <a href="/2018/12/12/%E7%AC%AC%E4%B8%80%E8%A1%8C%E4%BB%A3%E7%A0%81%E6%80%BB%E7%BB%93/" class="flat-box">
-            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-    
-      <div class="full-width auto-padding tags">
-        
-          <a href="/tags/Android/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> Android</a>
-        
-      </div>
-    
-  </section>
-</article>
-
+          <div class="prev-next">
+              
+              
+                  <section class="next">
+                      <span class="art-item-right" aria-hidden="true">
+                          <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                          <h4>
+                              <a href="/2019/01/05/%5BYnaqdh%5D%E5%88%B0%E5%BA%95%E6%98%AF%E4%BB%80%E4%B9%88%E6%84%8F%E6%80%9D(what%E2%80%99s%20the%20meaning%20of%20%5BYnadqh%5D)/" rel="prev" title="[Ynaqdh]到底是什么意思(what’s the meaning of [Ynadqh])">
+                                  
+                                      [Ynaqdh]到底是什么意思(what’s the meaning of [Ynadqh])
+                                  
+                              </a>
+                          </h4>
+                          
+                      </span>
+                  </section>
+              
           </div>
-        
       
-    
-  </section>
-  
-    
-    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
-    
-    
-
-  
+    </section>
+  </article>
 
 
-    
-  
+
+  <!-- 显示推荐文章和评论 -->
+
+
+
+  <article class="post white-box comments">
+    <section class="article typo">
+      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+      
+      
+      
+        <section id="comments">
+          <div id="gitalk-container"></div>
+        </section>
+      
+      
+    </section>
+  </article>
+
+
+
+
+
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+
+  <script>
+    window.subData = {
+      title: '证书文件格式互转(cer/crt/jks/bks/keystore/pem...)',
+      tools: true
+    }
+  </script>
+
 
 </div>
 <aside class='l_side'>
@@ -618,6 +664,11 @@
           
         
           
+          
+            
+              
+
+            
           
         
           
@@ -806,6 +857,46 @@
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
     
 
   
@@ -959,6 +1050,23 @@
 
 
 
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: "a28973d877a6840fa687",
+      clientSecret: "386588d1df73366856c39f8ffed191e8b8322fcf",
+      repo: "dazmk.github.io",
+      owner: "Dazmk",
+      admin: "Dazmk",
+      
+        id: location.pathname,      // Ensure uniqueness and length less than 50
+      
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+    gitalk.render('gitalk-container');
+  </script>
 
 
 
